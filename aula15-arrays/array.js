@@ -1,10 +1,24 @@
+/*
 console.log('Vamos aprender sobre arrays')
 
-let valores = [7,4,2,4,1,3]
-console.log(valores)
-//valores.sort()
-console.log(`Essa é a ordem dos valores: ${valores.sort()}`)
-console.log(`Total de elementos nesse array: ${valores.length} elementos`)
-valores.push(8)
-console.log(valores.indexOf(7))
-console.log(valores[2])
+let valores = [3,2,7,5,4]
+console.log(`Esses são os valores: ${valores}`)
+console.log(`Valores em ordem crescente: ${valores.sort()}`)
+console.log(`Primeiro valor: ${valores[0]}`)
+*/
+//Colocando valores no Array
+let bichos = []
+//Adicionando o primeiro valor
+bichos.unshift('Boi')
+//Adicionando o ultimo valor
+bichos.push('Galinha')
+//Adicionando onde eu quero
+bichos.splice(1,0,'Gato','Cachorro','Camelo')
+console.log(`${bichos}`)
+//Removendo o primeiro valor
+bichos.shift()
+//Removendo o ultimo valor
+bichos.pop()
+//Removendo o restante
+bichos.splice(2,2, 'Texugo')
+console.log(`${bichos}`)
