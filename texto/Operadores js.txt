@@ -1,0 +1,78 @@
+Operadores js
+
+ARITMETICOS
+()
+**
+/ * %
++ -
+
+ATRIBUIÇÃO(auto atribuição) =
+
+n = n + 4 (n += 4)
+
+n = n + 1 (n += 1 n ++)
+
+INCREMENTO(n = n + 1)
+
+n += 1 ou n++ ou n-- n**
+
+RELACIONAIS(A RESPOSTA É SEMPRE EM BOOLEAN) == ===(IDENTICO)(identidade de igualdade restrita mesmo valor e typeof
+
+> <
+
+----------------------
+
+lógicos
+
+!(negação) &&(e conjunção) ||(ou dijunção)
+
+! true = false        ! false - true
+
+
+PROCEDENCIA
+
+
+aRITMETICOS
+
+()
+**
+* / %
++ -
+
+RELACIONAIS
+
+>= <= > < == != === !==
+
+LÓGICOS
+
+!
+&&
+||
+
+TERNÁRIO
+
+TESTE? true:false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

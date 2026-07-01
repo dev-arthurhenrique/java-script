@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>par ou impar</title>
+</head>
+<body>
+    <h1>É par ou ímpar</h1>
+    <input type="button" value="Clique para iniciar" id="iniciar">
+    <div id="res"></div>
+    <script>
+        let iniciar = document.getElementById('iniciar')
+        iniciar.addEventListener('click', i)
+        function i(){
+            let numero = Number(prompt('Digite um número: ')) 
+            let res = document.querySelector('div#res')
+            res.innerHTML = `O número ${numero} que foi digitado é: `
+            if(numero % 2 == 0){
+                res.innerHTML += '<strong>PAR</strong>'
+            }else{
+                res.innerHTML += '<strong>ÍMPAR</strong>'
+            }
+        }
+    </script>
+</body>
+</html>

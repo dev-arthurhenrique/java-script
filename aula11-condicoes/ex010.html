@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+   <h1>Sistema de multas</h1>
+   <input type="number" name="velocidade" id="velocidade" placeholder="Informe a velo em km/h">
+   <input type="button" value="Verificar" id="verificar">
+   <div id="resposta"></div>
+   <script>
+    let verificar = document.getElementById('verificar')
+    verificar.addEventListener('click', v)
+    function v(){
+        let velocidade = document.querySelector('input#velocidade')
+        let vel = Number(velocidade.value)
+        let resposta = document.getElementById('resposta')
+        if(vel > 80){
+            resposta.innerHTML = 'Você foi <strong>MULTADO</strong>'
+        }else{
+            resposta.innerHTML = 'Você foi liberado'
+        }
+    }
+   </script>
+</body>
+</html>

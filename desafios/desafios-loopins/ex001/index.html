@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador</title>
+</head>
+<body>
+   <h1>Contando de 1 até 100</h1>
+    <input type="button" value="Contar de 1 a 10" id="verificar">
+    <p>Aperte o botão acima para contar</p>
+    <div id="res"></div>
+    <script>
+        let res = document.getElementById('res')
+        let verificar = document.getElementById('verificar')
+        verificar.addEventListener('click', clicar)
+        function clicar(){
+            for(cont = 1; cont <= 10; cont ++){
+                res.innerHTML += `${cont} \u{1F449}`
+            }res.innerHTML += `\u{DFC1}`
+        } 
+    </script>
+</body>
+</html>

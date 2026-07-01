@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tratamento de dados</title>
+</head>
+<body>
+  <script>
+    let nome = prompt('Informe seu nome: ')
+    let idade = Number(prompt("Informe sua idade: "))
+    let salario = Number(prompt(`Informe seu salário:...${nome}, Para fins de funcionamento coloque um . ao invés de , o sistema irá mostrar automaticamente o sinal de virgula, seguindo o padrão brasileiro, na tela logo após você clicar em OK`))
+    document.write(`<h1>Seja bem vindo, <strong>${nome}</strong>!</h1>`)
+    document.write(`Você tem ${idade} anos de idade<br>`)
+    document.write(`Seu nome em letras MAIÚSCULAS: ${nome.toUpperCase()}<br>`)
+    document.write(`Seu nome em letras minúsculas: ${nome.toLowerCase()}<br>`)
+    document.write(`Seu nome tem um total de ${nome.length}`)
+    document.write(`Seu salário é de R$ ${salario.toFixed(2).replace(".",",")}`)
+  </script>
+</body>
+</html>

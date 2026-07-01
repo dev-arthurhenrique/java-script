@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+   <h1>Super Tabuada</h1>
+   <p>Selecione um número e descubra sua tabuada</p>
+   <p><input type="number" name="tabuada_num" id="tabuada_num"> <input type="button" value="Calcular Tabuada" id="calcular"></p> 
+   <div id="res"></div>
+   <script>
+    let res = document.getElementById('res')
+    let calcular = document.getElementById('calcular')
+    calcular.addEventListener('click', clicar)
+    function clicar(){
+        let tabuada_num = document.getElementById('tabuada_num')   
+        let t = Number(tabuada_num.value)
+        if(tabuada_num.value.length == 0){
+            alert('Informe um número')
+            tabuada_num.focus()     
+        }else{
+            res.innerHTML = `<------ TABUADA DO ${t} -----><br>`
+            for(cont = 1; cont <= 12; cont ++){
+                res.innerHTML += `${t} X ${cont} = ${t * cont}<br>`
+            }
+        }
+    }
+   </script>
+</body>
+</html>

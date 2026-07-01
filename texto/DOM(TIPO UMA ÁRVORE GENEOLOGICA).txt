@@ -1,0 +1,80 @@
+DOM(TIPO UMA ÁRVORE GENEOLOGICA)
+
+window
+
+
+document.write("Olá, mundo)
+document.charset()
+navigaton.appname
+document.URL
+
+métodos de seleção
+
+MARCA(getElementByTagName('p')[0]) seleciona mais de uma tag
+
+let p1 = document.getElementByTagName('p')[0]
+document.write(p1.innertext)
+
+P1.STYLE.COLOR = ' COR
+
+INNERTEXT SO O TEXTO
+
+INNERHTML VEM COM AS FORMATAÇÕES
+
+MÉTODOS DE SELEÇÃO
+
+tag = getElementsByTagName()
+
+id = getElementById()
+
+class = getElementsByClassName()
+
+name = getElementsByName()
+
+seletor = querrySelector()
+
+
+EVENTOS DOM
+
+
+
+
+mouse chegou no elemento(mouseenter)
+
+mouse se move no elemento(mousemove)
+
+cliquei no mouse e segurei(mousedown)
+
+soltei o mouse(mouseup)
+
+apertar e soltar(click)
+
+mouse saiu(mouseout)
+
+
+
+
+função(conjunto de códigos que serão executados quando um evento ocorrer)
+
+div id onclick ="acao()"
+
+function acao(parametros){
+ let a = documentfsdfowp
+ a.innerText
+}
+
+
+usando addEventListner
+
+variável.addEventListener('nomedoevento(mouseout)', nomedaacaoquevccriou)
+
+div id onclick ="acao()"(substitui isso)
+
+
+
+
+caixa de texto(input)
+
+
+
+

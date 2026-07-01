@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="calculadora.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Calculadora Caseira</h1>
+        <p>
+            <input type="number" name="texto1" id="texto1" class="numero">
+            <input type="number" name="texto2" id="texto2" class="numero">
+        </p>
+        <p>
+            <input type="button" value="SOMAR" id="somar" class="operador">
+            <input type="button" value="SUBTRAIR" id="subtrair" class="operador">
+            <input type="button" value="MULTIPLICAR" id="multiplicar" class="operador">
+            <input type="button" value="DIVIDIR" id="dividir" class="operador">
+        </p>
+        <div id="resposta"><strong><em>A resposta aparecerá aqui...</em></strong></div>
+        <script>
+            let resposta = document.getElementById('resposta')
+            let somar = document.getElementById('somar')
+            somar.addEventListener('click', s)
+            let subtrair = document.getElementById('subtrair')
+            subtrair.addEventListener('click', su)
+            let multiplicar = document.getElementById('multiplicar')
+            multiplicar.addEventListener('click', m)
+            let dividir = document.getElementById('dividir')
+            dividir.addEventListener('click', d)
+            function s(){
+                let texto1 = document.getElementById('texto1')
+                let texto2 = document.getElementById('texto2')
+                let numero1 = Number(texto1.value)
+                let numero2 = Number(texto2.value)
+                resposta.innerHTML = `${numero1} + ${numero2} = ${numero1 + numero2}`
+            }
+            function su(){
+                let texto1 = document.querySelector('input#texto1')
+                let texto2 = document.querySelector('input#texto2')
+                let numero1 = Number(texto1.value)
+                let numero2 = Number(texto2.value)
+                resposta.innerHTML = `${numero1} - ${numero2} = ${numero1 - numero2}`
+            }
+            function m(){
+                let texto1 = document.getElementById('texto1')
+                let texto2 = document.getElementById('texto2')
+                let numero1 = Number(texto1.value)
+                let numero2 = Number(texto2.value)
+                resposta.innerHTML = `${numero1} x ${numero2} = ${numero1 * numero2}`
+            }
+            function d(){
+                let texto1 = document.querySelector('input#texto1')
+                let texto2 = document.querySelector('input#texto2')
+                let numero1 = Number(texto1.value)
+                let numero2 = Number(texto2.value)
+                resposta.innerHTML = `${numero1} / ${numero2} = ${(numero1 / numero2).toFixed(2)}`
+            }
+        </script>
+    </main> 
+</body>
+</html>

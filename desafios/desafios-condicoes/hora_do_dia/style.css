@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'cat';
+    src: url(fontes/Catwoman/CATWOMAN.TTF) format('truetype');
+}
+@font-face {
+    font-family: 'relogio';
+    src: url(fontes/digital_7/digital-7\ \(mono\).ttf) format('truetype');
+}
+*{
+    margin: auto;
+}
+body{
+    background-attachment: fixed;
+    background-color: rgb(185, 144, 223);
+    font: normal normal 1.1em 'Arial', sans-serif;
+}
+main{
+    margin: auto;
+    text-align: center;
+    margin-top: 7%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 60%;
+}
+header > h1{
+    margin-bottom: 30px;
+}
+header > h1 > span:hover{
+    color: rgb(253, 178, 190);
+    transition: 0.2s;
+    font-size: 1.15em;
+}
+section > h2{
+    margin-bottom: 30px;
+}
+input{
+    font-family: 'relogio';
+    font-size: 1.2em;
+    text-align: center;
+    border: bolder;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(185, 144, 223, 0.404);
+    padding: 15px;
+    width: 80px;
+    margin: 10px;
+}
+input#verificar{   
+    font-size: 1.2em;
+    width: 120px;
+}
+input#verificar:hover{
+    background-color: black;
+    color: rgba(185, 144, 223, 0.733);
+}

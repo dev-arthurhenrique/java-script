@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+</head>
+<body>
+   <h1>Antes e Depois</h1>
+   <input type="button" value="Antecessor e Sucessor" id="numero1">
+   <script>
+    let numero1 = document.querySelector("input#numero1")
+    numero1.addEventListener('click', n)
+    function n() {
+        let resposta = Number(prompt('Digite um número inteiro qualquer'))
+        alert(`Antes do ${resposta}, temos o número ${resposta - 1} Depois do ${resposta}, temos o número ${resposta + 1}`)
+    }
+   </script> 
+</body>
+</html>

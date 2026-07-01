@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        h1{
+            font-family:cursive;
+        }
+        input{
+            padding: 20px;
+            font-size: 1.2em;
+            border-radius: 15px;
+            outline: none;
+            border: none;
+            background-color: gray;
+            color: white;
+        }
+        input:hover{
+            background-color: white;
+            color: gray;
+            transition: 0.3s;
+        }
+        div#res{
+            line-height: 35px;
+            font-family: 1.2em;
+        }
+    </style>
+</head>
+<body>
+   <h1>Média do Aluno</h1>
+   <input type="button" value="Calcular média" id="calcular_media">
+   <div id="res"></div>
+   <script>
+    let media = document.getElementById('calcular_media')
+    media.addEventListener('click', m)
+    function m(){
+        let res = document.getElementById('res')
+        let nome = prompt('Qual é o nome do aluno')
+        let nota1 = Number(prompt(`Qual a primeira nota de ${nome.toUpperCase()} ?`))
+        let nota2 = Number(prompt(`Além de ${nota1.toFixed(1)}, qual foi a outra nota de ${nome.toLowerCase()}?`))
+        let media = (nota1 + nota2) / 2
+        res.innerHTML = `Calculando a média final de <mark>${nome.toUpperCase()}</mark>...<br>`
+        res.innerHTML += `As notas obtidas foram <mark>${nota1}</mark> e <mark>${nota2}</mark>.<br>`
+        res.innerHTML += `A média final será de <mark>${media}</mark><br>`
+        res.innerHTML += 'A mensagem que temos é: '
+        if(media < 6){
+            res.innerHTML += '<strong>REPROVADO</strong>'
+        }else{
+            res.innerHTML += '<strong>APROVADO</STRONG>'
+        }
+    }  
+   </script> 
+</body>
+</html>

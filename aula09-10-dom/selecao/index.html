@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de elementos DOM</title>
+    <style>
+        body{
+            background-color: rgb(149, 149, 229);
+        }
+    </style>
+</head>
+<body>
+   <h1>Aprendendo a selecionar elementos no DOM</h1>
+   <p>Primeira Frase usando a tag &lt;p&gt;</p>
+   <p>Segunda frase usando a tag &lt;p&gt;</p>
+   <div id="mensagem">Terceira frase usando &lt;div&gt;</div> 
+   <div class="classe">Quarta frase</div>
+   <script>
+    /*
+    document.write(`Essa é a <strong>URL</strong> do meu site ${document.URL} <br>`)
+    document.write(navigator.appName)
+    document.write(document.charset)
+    */
+    //métodos de seleção
+    //tag
+    let corpo = document.body
+    let paragrafo = document.getElementsByTagName('p')[1]
+    document.write(`${paragrafo.innerHTML} <br>`)
+    paragrafo.style.background = "blue"
+    corpo.style.background = "pink"
+    //id
+    let dive = document.getElementById('mensagem') 
+    document.write(dive.innerHTML)
+    dive.style.background = "white"
+    //class
+    let dive2 = document.getElementsByClassName('classe')[0] 
+    document.write(dive2.innerHTML)
+    dive2.style.color = "yellow"
+    //seletor
+    document.querySelector('div#mensagem')
+    document.write(dive.innerHTML)
+    document.querySelector('div.classe')
+    document.write(dive2.innerHTML)
+   </script>
+</body>
+</html> 

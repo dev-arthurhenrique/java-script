@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contagem</title>
+</head>
+<body>
+    <h1>Contagem regressiva de 10 a 1</h1>
+    <input type="button" value="Contar de 10 a 1" class="verificar">
+    <p>Aperte o botão acima para contar</p>
+    <div id="res"></div>
+    <script>
+        let res = document.getElementById('res')
+        let verificar = document.getElementsByClassName('verificar')[0]
+        verificar.addEventListener('click', clicar)
+        function clicar(){
+            for(cont = 10; cont >= 1; cont --){
+                res.innerHTML += `${cont} \u{1F449}`
+            }
+        }
+    </script>
+</body>
+</html>

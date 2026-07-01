@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Fatorial</title>
+</head>
+<body>
+    <h1>Cálculo de Fatorial</h1>
+    <p>Escreva um número (entre 1 e 21) na caixa a seguir e te mostrarei o Fatorial dele</p>
+    <p>Número: <input type="number" name="numero" id="numero"> <input type="button" value="Fatorial" id="fatorial"></p>
+    <p>Preencha os dados acimar e aperte o botão</p>
+    <div id="res"></div>
+    <script>
+        let res = document.getElementById('res')
+        let fatorial = document.getElementById('fatorial')
+        let soma = 0
+        fatorial.addEventListener('click', f)
+        function f(){
+            let numero = document.getElementById('numero')
+            let n = Number(numero.value)
+            //validando dados
+            if(numero.value.length == 0){
+                alert('Informe um número e aperte o botão')
+                numero.focus()
+            }else if(n < 1 || n > 21){
+                alert('Informe um número entre 1 e 21')
+                numero.focus()
+                numero.value = ''
+            }else{
+                res.innerHTML = `Fatorial de ${n}<br>`
+                let soma = 0
+                let multiplicar = 
+                for(let cont = n; cont >= 1; cont --){
+                    res.innerHTML += `${cont} x ` 
+                    soma += cont * (cont-1)
+                    res.innerHTML += ` = ${soma}  `
+                }
+            }
+        }
+    </script>
+</body>
+</html>

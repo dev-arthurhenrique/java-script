@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de troco</title>
+</head>
+<body>
+    <h1>Calculando Troco</h1>
+    <input type="button" value="Comprar produto" id="compra">
+    <script>
+        let compra = document.querySelector('input#compra')
+        compra.addEventListener('click', p)
+        function p(){
+            let produto_comprado = prompt('Que produto você está comprando?  ')
+            let valor_produto = Number(prompt(`Quanto custa ${produto_comprado.toUpperCase()} que você está comprando?`))
+            let valor_pago = Number(prompt(`Qual foi o valor que você deu para pegar o ${produto_comprado}?`))
+            prompt(`Você comprou ${produto_comprado} que custou R$ ${valor_produto.toFixed(2)}. Deu R$ ${valor_pago.toFixed(2)} em dinheiro e vai receber R$ ${(valor_pago - valor_produto).toFixed(2)}. Volte sempre`)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+CONDIÇÕES
+
+if(condicao){
+	true
+}else{
+	false
+}
+
+CONDIÇÕES ANINHADAS(else if)
+
+data atual
+
+let agora = new Date()
+let hora = agora.getHours()
+
+CONDIÇÕES MULTIPLAS(vários valores fixos)
+
+switch(expressao){
+	case: valor1:
+		bloco
+		break
+	default
+		bloco
+		break
+}
+
