@@ -1,0 +1,55 @@
+ARRAY
+
+let auto = [ b, c, d]
+
+indicie = posi 0,1,2
+conteúdo,valor  = b,c d
+elemento = indicie + conteúdo
+
+let num = [ , , ]
+
+acrescentar valores na ultima posicao:
+
+num[3] = 6
+
+num.push(6,7)
+
+console.log (num[0]
+
+ORGANIZAR CRESCENTE
+
+num.sort()
+
+COLOCAR ELEMENTOS NO INICIO
+
+unshift('tal', 'tal')
+
+REMOVER O PRIMEIRO ''''''' remover o ultimo
+
+shift()
+pop()
+
+
+for( let cont in variavel){
+	console.log(variavel[cont])	
+}
+
+
+BUSCAR VALORES
+
+VARIAVEL.indexOf(7)
+
+se naõ tiver vai dar -1
+
+
+SPLICE
+
+REMOVER, ADICONAR OU SUBSTITUIR
+
+foreach,map, filter
+
+
+MAIOR E MENOR VALOR DE ARRAY
+
+Math.min(...array)    Math.max(...array)
+
