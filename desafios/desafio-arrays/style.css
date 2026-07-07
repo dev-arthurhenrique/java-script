@@ -87,6 +87,7 @@ footer{
     text-align: center;
     padding: 10px;
     line-height: 60px;
+    padding-bottom: 30px;
 }
 footer > nav > ul > li{
     display: inline-block;
