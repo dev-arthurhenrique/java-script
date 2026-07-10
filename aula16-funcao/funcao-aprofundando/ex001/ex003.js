@@ -1,8 +1,10 @@
-function listar(...c){
-    let somar = 0
-    for(cont in c){
-        somar += c[cont]
-    }
-    return somar
-}
-console.log(list)
+//parametros rest 
+// soma = 0
+// function somar(...valores){
+//     let total = valores.length
+//     for(cont in valores){
+//         soma += valores[cont]
+//     }
+//     return soma
+// }
+// console.log(somar(2,4,5))
