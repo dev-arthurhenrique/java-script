@@ -1,56 +1,52 @@
-// arrow functions
+//arrow functions
 
-// function digaSeuNome(){
-//     let nome = 'Diego'
-//     return nome
-// }
-// console.log(digaSeuNome())
+//1. Par impar
 
-// let digaSeuNome = () => 'Diego'
-// console.log(digaSeuNome())
-
-// function somarValores(n1=0,n2=0){
-//     let res = n1 + n2
-//     return res
-// }
-// console.log(somarValores(5,8))
-
-let somarValores = (n1=0,n2=0) => n1 + n2
-console.log(somarValores(5,8))
-
-let saudar = () => "Olá, Dev! Vamos praticar?"
-console.log(saudar())
-
-let dobro = n => n * 2
-console.log(dobro(7))
-
-let calcularMedia = (n1=0,n2=0,n3=0) => (n1 + n2 + n3) / 3
-console.log(calcularMedia(7,3,8))
-
-// function parOuImpar(numero){
+// function parImpar(numero){
 //     if(numero % 2 == 0){
-//         return 'Par'
+//         return 'PAR'
 //     }else{
-//         return 'Impar'
+//         return 'IMPAR'
 //     }
 // }
-// console.log(parOuImpar(10))
+// console.log(parImpar(4))
 
-let parOuImpar = numero => numero % 2 == 0 ? 'Par' : 'Impar'
-console.log(parOuImpar(11))
+let parImpar = (numero) => numero % 2 == 0?'PAR':'IMPAR'
+console.log(parImpar(4))
 
-let podeDirigir = n => n < 18? 'Apenas Carona' : 'Pode dirigir'
-console.log(podeDirigir(11))
+//2. Dobro
 
-let inverterSinal = n => -n
-console.log(inverterSinal(1))
+let dobroNumero = (numero) => numero * 2
+console.log(dobroNumero(20))
 
-let verificarSenha = (senha) => senha.length >= 8?true:false
-console.log(verificarSenha('677877777'))
+//3. Média
 
+let mediaNotas = (numero1=0,numero2=0) => ((numero1 + numero2) / 2).toFixed(2)
+console.log(`Sua média foi de ${mediaNotas(5,7)} pontos`)
 
-let aplicarDesconto = n => n * 0.9
-console.log(aplicarDesconto(10))
+//4. Menor ou maior de idade
 
-let situacaoAluno = nota => nota >= 6? 'APROVADO' : 'REPROVADO'
-console.log(situacaoAluno(2))
+let maiorMenorIdade = idade => idade >= 18?'Você é maior de idade': 'Você é menor de idade'
+console.log(maiorMenorIdade(19))
+
+//5. Conversor de graus Celsius para Fahrenheit
+
+let celciusParaFahrenheit = c =>{
+    let f = c * 1.8 + 32
+    return f
+}
+console.log(celciusParaFahrenheit(100))
+
+//6. quantidade de caracteres em uma string
+
+// function quantidadeTexto(nome){
+//     if (nome.length == 0){
+//         return 'Texto vazio'
+//     }else{
+//         return nome.length
+//     }
+// }
+// console.log(quantidadeTexto('Arthur'))
+
+let quantidadeTexto = nome => nome.length==0?'Texto vazio':nome.length
+console.log(quantidadeTexto('Arthur'))

@@ -1,23 +1,25 @@
-// Escopo
-
-// let numero = 1// escopo global
-// function teste(){
-//     var numero2 = 2 //escopo local. So ocorre aqui
-//     console.log(numero2)
-// }
-// teste()
-
-// if(true){
-//     var numero3 = 3
-// }
-// console.log(numero3)
-
-//ESCOPO LEXICO
-function main(){
-    let numero = 1
-    function secundaria(){     
-        console.log(numero)       
-    }
-    secundaria()
+//ESCOPO
+// escopo global
+function chamarPai(){
+    let pai = 'Dinaldo'  //escopo local  
+    console.log(pai)
 }
-main()
+chamarPai()
+
+
+
+//içamento so funciona com var
+
+
+teste = 5
+console.log(teste)
+var teste
+
+
+
+
+var x = 10
+console.log(x,y)
+var y = 7
+
+
