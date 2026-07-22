@@ -19,13 +19,17 @@
 // }
 // console.log(acessoLoginMaria())
 
-const acessoLoginUsuario = (usuario) => {
-    const valores = []
-    for(cont in valores){
-        valores.push(valores[cont])
-    }
-    return `Acesso liberado ao(a) ${usuario}`
-}
-console.log(acessoLoginUsuario('Adam'))
-console.log(acessoLoginUsuario('Maria'))
+// const adminLogin = (adm) => {
+//     const valores = []
+//     for(cont in valores){
+//         valores.push(valores[cont])
+//     }
+//     return console.log(`Acesso liberado para ${adm}`)
+// }
+// adminLogin('Diego')
+// adminLogin('Adam')
+// adminLogin('Maria')
+// adminLogin('Pedro')
+
+
 
